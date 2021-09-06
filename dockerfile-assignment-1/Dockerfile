@@ -40,7 +40,7 @@
 # https://github.com/BretFisher/node-docker-good-defaults
 
 FROM node:6-alpine
-RUN apk add --no-cache --update tini \\
+RUN apk add --no-cache --update tini \
   && mkdir -p /usr/src/app 
 WORKDIR /usr/src/app
 COPY package.json .
